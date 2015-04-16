@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+//Luis Angel Aguilar Carrillo A01225421
+
+long superpower(long a, long b){
+	long power=1;
+	for (int i=1; i<=b; i++){
+		power = power*a;
+	} 
+
+	return power;
+}
+
+
+
+int main(){
+	long x,y;
+	
+	cout << "Introduce un numero" << endl;
+	cin >> x;
+	cout << "Introduce su potencia" << endl;
+	cin >> y;
+	
+	cout << superpower(x,y) << endl;
+	
+	
+	return 0;
+}
