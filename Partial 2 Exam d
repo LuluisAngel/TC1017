@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+// Luis Angel Aguilar Carrillo A01225421
+using namespace std;
+
+void ispalindrome(int x){
+	int t, d, r=0;
+	t = x;			
+	while(t>0){		
+		d= t%10;		
+		t/=10;
+		r=r*10+d;
+	}
+	
+	if (r==x){	
+		cout << "TRUE" << endl;
+	}
+	else{
+		cout << "FALSE" << endl;
+	}
+	
+
+}
+
+int main(){
+	
+	int x;				
+	
+	cout << "INTRODUCE EL STRING" << endl;
+	cin >> x;
+	
+	ispalindrome(x);
+
+	return 0;
+}
