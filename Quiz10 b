@@ -1,0 +1,44 @@
+#include <iostream>
+
+// Luis Angel Aguilar Carrillo A01225421
+
+using namespace std;
+
+int dotproduct(int arr1[], int arr2[], int array_size){
+	int x = array_size;
+	int p=0;
+
+	for (int i=0; i<x; i++){								// Recibe los numeros del arr1
+		cout << "Introduce un numero para A1" << endl;
+		cin >> arr1[i];
+	}
+
+	for (int j=0; j<x; j++){								// Recibe los numeros del arr2
+		cout << "Introduce un numero para A2" << endl;
+		cin >> arr2[j];
+	}
+
+		for (int k=0; k<x; k++){
+
+			p = p + (arr1[k]*arr2[k]);
+
+		}
+
+	return p;
+
+}
+
+int main(){
+	
+	int x;
+
+	cout << "Introduce el tamaño del arreglo" << endl;
+	cin >> x;
+
+	int arr1[x];
+	int arr2[x];
+
+	cout << "El producto es: " << dotproduct(arr1, arr2, x) << endl;
+
+	return 0;
+}
